@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сторінка реєстрації</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2b2b2b;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function goToAutorization() {
+            window.location.href = "{% url 'autorization' %}";
+        }
+        function goToSortPlayers() {
+            window.location.href = "{% url 'SortPlayers' %}";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Про нас</h1>
+        <h2>Ця веб-сторінка використовується для полегшення вибору команд</h2>
+        <h2>Вдалої гри</h2>
+        <div class="button-container">
+            <button class="button" onclick="goToAutorization()">Авторизація</button>
+            <button class="button" onclick="goToSortPlayers()">Сортування команди</button>
+        </div>
+    </div>
+</body>
+</html>
