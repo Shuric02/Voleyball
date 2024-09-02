@@ -1,0 +1,1 @@
+web: gunicorn Voleyball-s-solon.wsgi
