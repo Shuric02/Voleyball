@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure--&jcli1)#w7t5@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Voleyball-s-solon.azurewebsites.net', '127.0.0.1']
+#ALLOWED_HOSTS = ['Voleyball-s-solon.azurewebsites.net', '127.0.0.1']
+ALLOWED_HOSTS = ['Voleyball-s-solon.azurewebsites.net']
 
 
 
